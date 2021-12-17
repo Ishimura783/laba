@@ -724,3 +724,4 @@ D:\3 КУРС\ВОТП\laba1\laba1\bin\Debug\net5.0\Serilog.Formatting.Compact.d
 D:\3 КУРС\ВОТП\laba1\laba1\bin\Debug\net5.0\Serilog.Sinks.Async.dll
 D:\3 КУРС\ВОТП\laba1\laba1\bin\Debug\net5.0\Serilog.Sinks.File.dll
 D:\3 КУРС\ВОТП\laba1\laba1\bin\Debug\net5.0\Serilog.Sinks.RollingFile.dll
+D:\3 КУРС\ВОТП\laba1\laba1\obj\Debug\net5.0\Razor\Views\File\UploadFile.cshtml.g.cs

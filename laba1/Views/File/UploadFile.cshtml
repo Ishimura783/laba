@@ -1,0 +1,17 @@
+﻿@using laba1.Models.Home
+@using laba1.Models.File
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@model UploadFileViewModel
+
+@{
+    Layout = "";
+    ViewData["Title"] = "Files";
+}
+<form asp-action="Upload" asp-controller="File" enctype="multipart/form-data" method="post">
+    <p>Введіть назву для файла:</p> <br />
+    <input type="text" asp-for="Name" /> <br> <br>
+    <p>Виберіть файл:</p> <br />
+    <input type="file" asp-for="File" /> <br> <br>
+    <input type="submit" value="Upload" /> <br> <br>
+</form>
