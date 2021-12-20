@@ -2,6 +2,44 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "FluentValidation/10.3.6": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/10.3.6": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.3.6",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.6"
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.3.6",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.9": {
         "type": "package",
         "dependencies": {
@@ -239,7 +277,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -1081,6 +1119,63 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.3.6": {
+      "sha512": "iMd370ZDx6ydm8t7bIFdRbSKX0e42lpvCtifUSbTSXOk5iKjmgl7HU0PXBhIWQAyIRi3gCwfMI9luj8H6K+byw==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.6.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/10.3.6": {
+      "sha512": "xUgEjm+aqQPiVyZHmIq1HCShjlu17Rm1iV6yuL9CFWAl9YPvMxJL7vB+A1CqFUeWsx3LH8fM8ivA/5q5jPmcJg==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/10.3.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+      "sha512": "yMwmbr+sHP/VLRQPTBVcgbJmtP5PGmxzNsqVX7FccDRwDB2edP8XsXWLNTZ4UwrslU1qQUD07BNQLDh7WXzpNw==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.9": {
       "sha512": "DRDXPFr1msqGIif9DWPk+dVxEUJ7PUeOIBdrGtxnhuhr/VN+s/bfNE8PDacUpL977zG72IUn7VrwmgrDi4DPRQ==",
       "type": "package",
@@ -1429,16 +1524,16 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "sha512": "8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -4160,6 +4255,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FluentValidation >= 10.3.6",
+      "FluentValidation.AspNetCore >= 10.3.6",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.9",
       "SendGrid >= 9.24.4",
       "Serilog.Extensions.Logging.File >= 2.0.0",
@@ -4167,19 +4264,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Каріна\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\laba1.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj",
       "projectName": "laba1",
-      "projectPath": "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\laba1.csproj",
-      "packagesPath": "C:\\Users\\Каріна\\.nuget\\packages\\",
-      "outputPath": "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\laba1\\laba1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Каріна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4193,8 +4290,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj": {
-              "projectPath": "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj"
+            "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj"
             }
           }
         }
@@ -4209,6 +4306,14 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.3.6, )"
+          },
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[10.3.6, )"
+          },
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
             "version": "[5.0.9, )"
@@ -4240,7 +4345,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

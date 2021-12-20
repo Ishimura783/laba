@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\laba1.csproj": {}
+    "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj": {}
   },
   "projects": {
-    "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\laba1.csproj": {
+    "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\laba1.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj",
         "projectName": "laba1",
-        "projectPath": "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\laba1.csproj",
-        "packagesPath": "C:\\Users\\Каріна\\.nuget\\packages\\",
-        "outputPath": "D:\\3 КУРС\\ВОТП\\laba1\\laba1\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\laba1\\laba1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Каріна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj": {
-                "projectPath": "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj"
+              "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj"
               }
             }
           }
@@ -44,6 +44,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -75,21 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj": {
+    "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\3 КУРС\\ВОТП\\laba1\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\Каріна\\.nuget\\packages\\",
-        "outputPath": "D:\\3 КУРС\\ВОТП\\laba1\\Services\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\laba1\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Каріна\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -135,7 +143,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

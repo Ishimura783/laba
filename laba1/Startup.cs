@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Services.EmailService;
 using Microsoft.Extensions.Logging;
+using FluentValidation.AspNetCore;
 
 namespace laba1
 {
@@ -28,6 +29,8 @@ namespace laba1
             services.AddControllersWithViews();
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddHttpContextAccessor();
+
+            services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +48,7 @@ namespace laba1
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseRequestLocalization();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

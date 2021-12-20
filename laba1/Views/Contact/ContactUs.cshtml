@@ -1,0 +1,20 @@
+﻿@using laba1.Models.Contact
+
+@model ContactViewModel
+
+@{
+    Layout = "";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contact with us</h1>
+</div>
+
+@Html.ValidationSummary(false, null, new { @class = "text-danger" })
+
+<form asp-action="CreateContact" asp-controller="Contact" enctype="multipart/form-data" method="post">
+    <input type="text" asp-for="EmailAddress" /> <br /> <br />
+    <input type="text" asp-for="Username" /> <br /> <br />
+
+    <input type="submit" value="Contact" /> <br /> <br />
+</form>
