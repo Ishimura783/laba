@@ -4264,19 +4264,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Каріна\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj",
+      "projectUniqueName": "C:\\Users\\Каріна\\Desktop\\laba1\\laba1\\laba1.csproj",
       "projectName": "laba1",
-      "projectPath": "C:\\Users\\user\\Desktop\\laba1\\laba1\\laba1.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\laba1\\laba1\\obj\\",
+      "projectPath": "C:\\Users\\Каріна\\Desktop\\laba1\\laba1\\laba1.csproj",
+      "packagesPath": "C:\\Users\\Каріна\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Каріна\\Desktop\\laba1\\laba1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Каріна\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4290,8 +4290,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\laba1\\Services\\Services.csproj"
+            "C:\\Users\\Каріна\\Desktop\\laba1\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Каріна\\Desktop\\laba1\\Services\\Services.csproj"
             }
           }
         }
@@ -4345,7 +4345,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

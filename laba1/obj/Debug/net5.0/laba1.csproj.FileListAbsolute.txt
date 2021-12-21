@@ -1103,3 +1103,4 @@ C:\Users\user\Desktop\laba1\laba1\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\user\Desktop\laba1\laba1\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\user\Desktop\laba1\laba1\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\user\Desktop\laba1\laba1\obj\Debug\net5.0\Razor\Views\Contact\ContactUs.cshtml.g.cs
+C:\Users\user\Desktop\laba1\laba1\obj\Debug\net5.0\Razor\Views\Shared\_SelectLanguagePartial.cshtml.g.cs

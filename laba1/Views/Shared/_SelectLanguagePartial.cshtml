@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+
+@inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+
+    var cultureItems = LocOptions.Value.SupportedUICultures
+        .Select(c => new SelectListItem { Value = c.Name, Text = c.NativeName })
+        .ToList();
+
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+}
+
+<form asp-controller="File" asp-action="SetLanguage" style="margin-top:20px;"
+      asp-route-returnUrl="@Context.Request.Path"
+      method="post" class="form-horizontal">
+    Language: <select name="culture" onchange="this.form.submit();"
+                      asp-for="@requestCulture.RequestCulture.UICulture.Name"
+                      asp-items="cultureItems">
+    </select>
+</form>  

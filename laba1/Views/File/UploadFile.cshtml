@@ -8,6 +8,14 @@
     Layout = "";
     ViewData["Title"] = "Files";
 }
+
+@inject IViewLocalizer Localizer;
+
+<div class="text-center">
+    @await Html.PartialAsync("_SelectLanguagePartial")
+<h1 class="display-4">@Localizer["Uploading files"]</h1>
+</div>
+
 <form asp-action="Upload" asp-controller="File" enctype="multipart/form-data" method="post">
     <p>Введіть назву для файла:</p> <br />
     <input type="text" asp-for="Name" /> <br> <br>
